@@ -1,0 +1,65 @@
+
+<!-- Ejemplo onload event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+ <!-- script javascript     -->
+<script>
+function colores() {
+  rojo.className = "test";
+  nar.className = "test";
+  am.className = "test";
+  verd.className = "test";
+  ac.className = "test";
+  az.className = "test";
+  mor.className = "test";
+}
+function negro() {
+  rojo.className = "negro";
+  nar.className = "negro";
+  am.className = "negro";
+  verd.className = "negro";
+  ac.className = "negro";
+  az.className = "negro";
+  mor.className = "negro";
+}
+function rojof() {
+  rojo.className = "rojo";
+}
+function naranjaf() {
+  nar.className = "naranja";
+}
+function amarillof() {
+  am.className = "amarillo";
+}
+function verdef() {
+  verd.className = "verde";
+}
+function azulcf() {
+  ac.className = "azulc";
+}
+function azulf() {
+  az.className = "azul";
+}
+function moradof() {
+  mor.className = "morado";
+}
+
+</script>
+</head>
+
+<body >
+<h1>Arc de Sant Martí</h1>
+
+<p id="rojo" onmouseenter="rojof()" onmouseleave="this.className = negro">roig, red, rojo</p>
+<p id="nar" onmouseenter="naranjaf()" onmouseleave="this.className = negro">taronja, orange, naranja</p>
+<p id="am" onmouseenter="amarillof()" onmouseleave="this.className = negro">groc, yellow, amarillo</p>
+<p id="verd" onmouseenter="verdef()" onmouseleave="this.className = negro">verd, green, verde</p>
+<p id="ac" onmouseenter="azulcf()" onmouseleave="this.className = negro">blau clar, light blue, azul claro</p>
+<p id="az" onmouseenter="azulf()" onmouseleave="this.className = negro">blau, blue, azul</p>
+<p id="mor" onmouseenter="moradof()" onmouseleave="this.className = negro">morat, purple, morado</p>
+
+<h3 onclick="colores()" class="test">Arc de Sant Martí</h3>
+</body>
